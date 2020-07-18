@@ -30,15 +30,7 @@
 		<beans:property name="prefix" value="/WEB-INF/jsp/" />
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
-<!-- 
-	<beans:bean id="messageSource"
-		class="org.springframework.context.support.ResourceBundleMessageSource">
-		<property name="basename">
-			<value>messages</value>
-		</property>
-	</beans:bean>
-	
- -->	<!-- Step 1: Define Database Datasource/connection pool -->
+	<!-- Step 1: Define Database Datasource/connection pool -->
 	<beans:bean id="dataSource"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<beans:property name="driverClassName"
